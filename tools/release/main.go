@@ -13,7 +13,7 @@ import (
 	"golang.org/x/oauth2"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/infracost/infracost/internal/logging"
+	"github.com/infracost/infracost/pkg/logging"
 )
 
 func main() {

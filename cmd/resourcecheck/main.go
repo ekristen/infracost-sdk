@@ -14,7 +14,7 @@ import (
 	"github.com/dave/dst/decorator"
 	"github.com/slack-go/slack"
 
-	"github.com/infracost/infracost/internal/logging"
+	"github.com/infracost/infracost/pkg/logging"
 )
 
 var (

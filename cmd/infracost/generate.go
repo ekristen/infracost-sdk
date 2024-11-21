@@ -12,13 +12,13 @@ import (
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v2"
 
-	"github.com/infracost/infracost/internal/config"
-	"github.com/infracost/infracost/internal/config/template"
-	"github.com/infracost/infracost/internal/hcl"
-	"github.com/infracost/infracost/internal/logging"
-	"github.com/infracost/infracost/internal/providers"
-	"github.com/infracost/infracost/internal/ui"
-	"github.com/infracost/infracost/internal/vcs"
+	"github.com/infracost/infracost/pkg/config"
+	"github.com/infracost/infracost/pkg/config/template"
+	"github.com/infracost/infracost/pkg/hcl"
+	"github.com/infracost/infracost/pkg/logging"
+	"github.com/infracost/infracost/pkg/providers"
+	"github.com/infracost/infracost/pkg/ui"
+	"github.com/infracost/infracost/pkg/vcs"
 )
 
 type generateConfigCommand struct {

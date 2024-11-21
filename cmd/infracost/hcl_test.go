@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/infracost/infracost/internal/testutil"
+	"github.com/infracost/infracost/pkg/testutil"
 )
 
 func TestHCLMultiProjectInfra(t *testing.T) {

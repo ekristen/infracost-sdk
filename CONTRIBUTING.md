@@ -127,11 +127,11 @@ The GraphQL pricing API limits the number of results returned to 1000, which can
 
 Consult [PR #2628](https://github.com/infracost/infracost/pull/2628) as an example.
 
-1. In [internal/resources/aws/util.go](internal/resources/aws/util.go), add the new region's information to `RegionMapping`, `RegionCodeMapping`, and `RegionsUsage` as needed.
-2. In [internal/resources/aws/global_accelerator_endpoint_group.go](internal/resources/aws/global_accelerator_endpoint_group.go), update `regionCodeMapping` as needed.
-3. In [internal/resources/aws/cloudfront_distribution.go](internal/resources/aws/cloudfront_distribution.go), update `regionShieldMapping` as needed.
-4. In [internal/providers/terraform/aws/testdata/data_transfer_test/data_transfer_test.usage.yml](internal/providers/terraform/aws/testdata/data_transfer_test/data_transfer_test.usage.yml), add a usage block for data transfer.
-5. Update [internal/providers/terraform/aws/testdata/data_transfer_test/data_transfer_test.golden](internal/providers/terraform/aws/testdata/data_transfer_test/data_transfer_test.golden) by running `ARGS="-run TestDataTransferGoldenFile -v -update" make test_aws`.
+1. In [internal/resources/aws/util.go](pkg/resources/aws/util.go), add the new region's information to `RegionMapping`, `RegionCodeMapping`, and `RegionsUsage` as needed.
+2. In [internal/resources/aws/global_accelerator_endpoint_group.go](pkg/resources/aws/global_accelerator_endpoint_group.go), update `regionCodeMapping` as needed.
+3. In [internal/resources/aws/cloudfront_distribution.go](pkg/resources/aws/cloudfront_distribution.go), update `regionShieldMapping` as needed.
+4. In [internal/providers/terraform/aws/testdata/data_transfer_test/data_transfer_test.usage.yml](pkg/providers/terraform/aws/testdata/data_transfer_test/data_transfer_test.usage.yml), add a usage block for data transfer.
+5. Update [internal/providers/terraform/aws/testdata/data_transfer_test/data_transfer_test.golden](pkg/providers/terraform/aws/testdata/data_transfer_test/data_transfer_test.golden) by running `ARGS="-run TestDataTransferGoldenFile -v -update" make test_aws`.
 7. Update [internal/hcl/zones_aws.go]:
    1. Use the AWS CLI to check if the region is enabled in your AWS account by running `aws ec2 describe-availability-zones --region <NEW-REGION_ID e.g. ca-west-1>` 
    2. If needed, enable the region by running `aws account enable-region --region-name <NEW-REGION-ID>`.  This usually takes several minutes. 

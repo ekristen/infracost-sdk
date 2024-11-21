@@ -18,8 +18,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/tidwall/gjson"
 
-	"github.com/infracost/infracost/internal/config"
-	"github.com/infracost/infracost/internal/testutil"
+	"github.com/infracost/infracost/pkg/config"
+	"github.com/infracost/infracost/pkg/testutil"
 )
 
 func TestBreakdownHelp(t *testing.T) {

@@ -4,8 +4,8 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/infracost/infracost/internal/config"
-	"github.com/infracost/infracost/internal/testutil"
+	"github.com/infracost/infracost/pkg/config"
+	"github.com/infracost/infracost/pkg/testutil"
 )
 
 func TestFlagErrorsNoPath(t *testing.T) {

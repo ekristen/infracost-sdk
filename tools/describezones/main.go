@@ -16,7 +16,7 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	"google.golang.org/api/compute/v1"
 
-	"github.com/infracost/infracost/internal/logging"
+	"github.com/infracost/infracost/pkg/logging"
 )
 
 func main() {

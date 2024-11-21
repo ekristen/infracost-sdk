@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/infracost/infracost/internal/config"
-	"github.com/infracost/infracost/internal/logging"
-	"github.com/infracost/infracost/internal/testutil"
+	"github.com/infracost/infracost/pkg/config"
+	"github.com/infracost/infracost/pkg/logging"
+	"github.com/infracost/infracost/pkg/testutil"
 )
 
 func TestGenerateConfig(t *testing.T) {

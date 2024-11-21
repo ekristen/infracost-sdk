@@ -7,12 +7,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/infracost/infracost/internal/apiclient"
-	"github.com/infracost/infracost/internal/clierror"
-	"github.com/infracost/infracost/internal/config"
-	"github.com/infracost/infracost/internal/logging"
-	"github.com/infracost/infracost/internal/output"
-	"github.com/infracost/infracost/internal/ui"
+	"github.com/infracost/infracost/pkg/apiclient"
+	"github.com/infracost/infracost/pkg/clierror"
+	"github.com/infracost/infracost/pkg/config"
+	"github.com/infracost/infracost/pkg/logging"
+	"github.com/infracost/infracost/pkg/output"
+	"github.com/infracost/infracost/pkg/ui"
 )
 
 var (
