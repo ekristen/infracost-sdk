@@ -21,7 +21,7 @@ require (
 	github.com/google/go-cmp v0.6.0
 	github.com/google/uuid v1.3.0
 	github.com/huandu/xstrings v1.3.2 // indirect
-	github.com/jedib0t/go-pretty/v6 v6.2.1
+	github.com/jedib0t/go-pretty/v6 v6.6.2
 	github.com/joho/godotenv v1.4.0
 	github.com/json-iterator/go v1.1.12
 	github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51
@@ -117,6 +117,7 @@ require (
 	github.com/soongo/path-to-regexp v1.6.4
 	github.com/spacelift-io/spacectl v1.2.0
 	github.com/turbot/terraform-components v0.0.0-20231213122222-1f3526cab7a7
+	github.com/whilp/git-urls v1.0.0
 	github.com/withfig/autocomplete-tools/packages/cobra v1.2.0
 	github.com/xanzy/go-gitlab v0.86.0
 	golang.org/x/exp v0.0.0-20231006140011-7918f672742d
@@ -216,7 +217,6 @@ require (
 	github.com/urfave/cli/v2 v2.27.2 // indirect
 	github.com/vmihailenco/msgpack/v5 v5.3.5 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
-	github.com/whilp/git-urls v1.0.0 // indirect
 	github.com/xanzy/ssh-agent v0.3.3 // indirect
 	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
 	github.com/xrash/smetrics v0.0.0-20240312152122-5f08fbb34913 // indirect
