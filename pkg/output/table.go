@@ -292,7 +292,7 @@ func buildCostComponentRows(t table.Writer, currency string, costComponents []Co
 				price,
 				price,
 				price,
-			}, table.RowConfig{AutoMerge: true, AlignAutoMerge: text.AlignLeft})
+			}, table.RowConfig{AutoMerge: true, AutoMergeAlign: text.AlignLeft})
 		} else {
 			var tableRow table.Row
 			tableRow = append(tableRow, label)
